@@ -10,7 +10,7 @@ def historical_api_call():
 
     today = datetime.today() 
     yesterday = (today - timedelta(days=1))
-    last_year = yesterday - relativedelta(years=1)
+    last_year = yesterday - relativedelta(years=4)
     yesterday = yesterday.strftime("%d %b, %Y")
     last_year = last_year.strftime("%d %b, %Y")
 
