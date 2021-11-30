@@ -35,11 +35,3 @@ engine = create_engine(config.DB_PATH)
 # Collect kline data
 historical_df = historical_api_call()
 historical_df.to_sql('historical', con=engine, if_exists='replace')
-
-# Previous year data
-#historical_1 = historical_hist_api_call(1)
-#historical_2 = historical_hist_api_call(2)
-#historical_3 = historical_hist_api_call(3)
-#historical_1.to_sql('historical', con=engine, if_exists='append')
-#historical_2.to_sql('historical', con=engine, if_exists='append')
-#historical_3.to_sql('historical', con=engine, if_exists='append')
