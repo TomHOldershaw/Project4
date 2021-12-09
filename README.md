@@ -12,7 +12,7 @@ The project is designed to predict the future value of crypto currency. The data
 At present, the project produces models only for Ethereum.
 
 ## Intended use
-The intended use of the project is to produce forecasts of coin prices to inform investment decisions. With time, the intention is to develop a front end to display these predictions.
+The intended use of the project is to produce forecasts of coin prices to inform investment decisions. With time, the intention is to develop a front end to display these predictions. In this use case, the trained model would be used to forecast from the latest price points obtained from the API at the point of prediction.
 
 ## Database
 The project made use of the [previous code produced by the team](https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
