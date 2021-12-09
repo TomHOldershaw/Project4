@@ -29,8 +29,8 @@ The data was obtained from the AWS database by the model scripts using a SQL Alc
 ### Model results
 
 
-## RNN model
-[Technical documentation](README_RNN.md) is provided for the RNN model, data preparation and model results
+## LSTM (Long Short Term Memory) model
+[Technical documentation](README_LSTM.md) is provided for the LSTM model, data preparation and model results
 
 # Conclusions
 We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the WHICH MODEL
