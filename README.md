@@ -30,18 +30,7 @@ The data was obtained from the AWS database by the model scripts using a SQL Alc
 
 
 ## RNN model
-### Data cleaning
-This model used only the close price of the currency for each day. The data was transformed so that, for each data point, the close prices for the previous 150 days were provided as datapoints to train the model.
-
-70% of the dataset (covering 4 years) was used for training, with 30% reserved for testing.
-
-The data was scaled using a MinMaxScaler for use in the model.
-
-### Model form
-
-### Model
-
-### Predictions
+[Technical documentation](README_RNN.md) is provided for the RNN model, data preparation and model results
 
 # Conclusions
 We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the WHICH MODEL
