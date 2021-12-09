@@ -15,7 +15,7 @@ At present, the project produces models only for Ethereum.
 The intended use of the project is to produce forecasts of coin prices to inform investment decisions. With time, the intention is to develop a front end to display these predictions.
 
 ## Database
-The project made use of the [previous code produced by the team] (https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
+The project made use of the [previous code produced by the team](https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
 
 The data was obtained from the AWS database by the model scripts using a SQL Alchemy connection. The connection details and password were stored in a configuration file.
 
