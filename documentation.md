@@ -2,7 +2,7 @@
 
 This file details the steps taken in producing the models, highlighting differences both in model form and in the required data processing to produce the right data for each model.
 
-<a id="investigation"></a># Model investigation
+# <a id="investigation"></a>Model investigation
 
 ## Data Processing
 
@@ -43,7 +43,7 @@ Several model forms were compared. After conducting our algorithm comparison, we
 
 ![comparison of algorithms](cross-validation.png)
 
-<a id="lr"></a># Linear Regression Model
+# <a id="lr"></a>Linear Regression Model
 
 At this point, we can proceed with creating training and test sets for our linear regression model.
 
@@ -51,7 +51,7 @@ After running our linear regression model, we received a r-score of 0.9194767095
 
 ![prediction vs actual and model coef](lr_img1.PNG)
 
-<a id="lstm"></a># LSTM (Long Short Term Memory) model 
+# <a id="lstm"></a>LSTM (Long Short Term Memory) model 
 
 LSTM model is part of RNN (Recurrent Neural Networks) which is extensively used for prediction modelling that involves sequential data. In this project, we are using LSTM model to predict the price of crypto currency (Ethereum).
 
