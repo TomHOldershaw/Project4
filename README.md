@@ -19,19 +19,18 @@ The project made use of the [previous code produced by the team](https://github.
 
 The data was obtained from the AWS database by the model scripts using a SQL Alchemy connection. The connection details and password were stored in a configuration file.
 
-## Model investigation (cross-validation)
+## Project steps
+The project steps are illustrated below.
 
-## Regression model
-### Data cleaning
+Technical details are provided on key stages in this process:
+ - [Model investigation](documentation.md#model)
+ - [Linear Regression model](documentation.md#lr)
+ - [Long Short Term Memory model](documentation.md#lstm)
 
-### Model form
-
-### Model results
-
-
-## LSTM (Long Short Term Memory) model
-[Technical documentation](README_LSTM.md) is provided for the LSTM model, data preparation and model results.  
-The model itself is in [ETH_RNN_1.ipynb](ETH_RNN_1.ipynb)
+Model notebooks are:
+ - Model investigation
+ - Linear Regression
+ - [Long Short Term Memory](ETH_RNN_1.ipynb)
 
 # Conclusions
 We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the WHICH MODEL
