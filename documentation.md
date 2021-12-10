@@ -38,4 +38,4 @@ After conducting our algorithm comparisson, we can see that linear regression is
 
 At this point, we can proceed with creating training and test sets for our linear regression model. 
 
-![](lr_img1.jpg?raw=true "Title")
+![prediction vs actual and model coef](lr_img1.PNG)
