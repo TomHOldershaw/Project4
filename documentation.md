@@ -38,7 +38,10 @@ TRAIN: Year 1, Year 2 and Year 3
 
 TEST: Year 4
 
-After conducting our algorithm comparisson, we can see that linear regression is our best choice (0.996457). 
+### Cross-Validation
+Several model forms were compared. After conducting our algorithm comparison, we can see that linear regression (LR) and neural networks (NN) both have high scores. These models were therefore carried forward for further investigation.
+
+![comparison of algorithms](cross-validation.png)
 
 # Linear Regression Model
 
