@@ -133,6 +133,15 @@ R2 score: 0.8860505072004533
 
 It is surprising to note that the 'optimised' model gives lower scores than the original model. Various attempts to alter the optimisation settings did not produce a better model.
 
+### Visualising and predicting
+
+The model results (using the better performing model) were plotted to compare the train and test model results to the actual prices, as shown below.
+
+![train test results](train_test_compare.png)
+
+Using the model, a prediction was also made for prices in the future.
+![predictions](predict.png)
+
 ## GRU model
 
 Like LSTM, we use Sequential model from Keras that allows to create a Neural Network object with sequential layers. Then, we add GRU layers and given that predicting a price of a coin is a quite complex task we use 50 LSTM units per LSTM layer and we use multiple LSTM layers. We also used dropout regularisation method to reduce the effect of reducing the overfitting and improving the model performance. Finally, we use the Dense module to add an output layer. 
