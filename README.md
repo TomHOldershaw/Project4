@@ -1,4 +1,4 @@
-v# Crypto Prediction
+# Crypto Prediction
 
 ## Team members
 * [Abdurrahman Raja](https://github.com/Abzraja)
