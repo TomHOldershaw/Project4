@@ -22,7 +22,7 @@ The data was obtained from the AWS database by the model scripts using a SQL Alc
 ## Project steps
 The project steps are illustrated below.
 
-![project steps](project_steps.png)
+![project steps](images/project_steps.png)
 
 Technical details are provided on key stages in this process:
  - [Model investigation](documentation.md#model)
