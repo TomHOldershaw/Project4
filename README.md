@@ -28,7 +28,7 @@ Model notebooks are:
  - [Cross Validation and Linear Regression Test 1](notebooks/01%20-%20Cross%20Validation.ipynb)
  - [Cross Validation and Linear Regression Test 2](notebooks/02%20-%20Predicting%20the%20future%20price%20of%20ethereum%20-%20shifting%20the%20target.ipynb)
  - [Cross Validation and Linear Regression Test 3](notebooks/03%20-%20Predicting%20the%20future%20price%20of%20ethereum%20-%20Adding%20Features%20which%20are%20shifted.ipynb)
- - [Long Short Term Memory](notebooks/ETH_RNN_1.ipynb)
+ - [RNN: Long Short Term Memory and GRU](notebooks/ETH_RNN_1.ipynb)
 
 # Conclusions
-We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the WHICH MODEL
+We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the GRU model for further development
