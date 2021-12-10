@@ -38,4 +38,8 @@ After conducting our algorithm comparisson, we can see that linear regression is
 
 At this point, we can proceed with creating training and test sets for our linear regression model. 
 
+## Linear Regression Model
+
+After running our linear regression model, we received a r-score of 0.9194767095962151. Plotting our model's predictions can be found below along with the feature coefficients.
+
 ![prediction vs actual and model coef](lr_img1.PNG)
