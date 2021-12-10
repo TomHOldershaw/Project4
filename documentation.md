@@ -55,11 +55,11 @@ After running our linear regression model, we received a r-score of 0.9194767095
 
 ### 30 Days Ahead Feature
 
-In an attempt to tune our linear regression model, we create a new feature called "Predictions", this contained the closing result thirty days in the future and we tested this being our Y label. However this did not prove to be successful with a mdoel score of -6.209596205147941 when tasking our model with predicting prices thirty days in the future. 
+In an attempt to tune our linear regression model, we create a new feature called "Predictions", this contained the closing result thirty days in the future and we tested this being our Y label. However this did not prove to be successful with a model score of -6.209596205147941 when tasking our model with predicting prices thirty days in the future. 
 
 ### 14 Days Prior Feature 
 
-In a separate attempt to tune our results, we provided a new column titled "close(t-14)" this gave a row of data the closing price fourteen days prior. As with our previous two Algorithm Comparisons, Linear Regression was the most effective for our choice in model. When tasking our model this time to predict close prices, this feature enabled our model to reutrn an R2 Score of 1.0. This occurred on both our train and our test set, which means that our model does not appear to be overfitting. 
+In a separate attempt to tune our results, we provided a new column titled "close(t-14)" this gave a row of data the closing price fourteen days prior. As with our previous two Algorithm Comparisons, Linear Regression was the most effective for our choice in model. When tasking our model this time to predict close prices, this feature enabled our model to reutrn an R2 Score of 0.92173598904218.
 
 # <a id="lstm"></a>LSTM (Long Short Term Memory) model 
 
