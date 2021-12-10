@@ -41,7 +41,7 @@ TEST: Year 4
 ### Cross-Validation
 Several model forms were compared. After conducting our algorithm comparison, we can see that linear regression (LR) and neural networks (NN) both have high scores. These models were therefore carried forward for further investigation.
 
-![comparison of algorithms](cross-validation.png)
+![comparison of algorithms](images/cross-validation.png)
 
 # <a id="lr"></a>Linear Regression Model
 
@@ -49,7 +49,7 @@ At this point, we can proceed with creating training and test sets for our linea
 
 After running our linear regression model, we received a r-score of 0.9194767095962151. Plotting our model's predictions can be found below along with the feature coefficients.
 
-![prediction vs actual and model coef](lr_img1.PNG)
+![prediction vs actual and model coef](images/lr_img1.PNG)
 
 ## Model Tuning
 
@@ -147,11 +147,11 @@ It is surprising to note that the 'optimised' model gives lower scores than the 
 
 The model results (using the better performing model) were plotted to compare the train and test model results to the actual prices, as shown below.
 
-![train test results](train_test_compare.png)
+![train test results](images/train_test_compare.png)
 
 Using the model, a prediction was also made for prices in the future.
 
-![predictions](predict.png)
+![predictions](images/predict.png)
 
 ## GRU model
 
