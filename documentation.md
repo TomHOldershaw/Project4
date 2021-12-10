@@ -4,6 +4,11 @@ This file details the steps taken in producing the models, highlighting differen
 
 # <a id="model"></a>Model investigation
 
+## Database
+The project made use of the [previous code produced by the team](https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
+
+The data was obtained from the AWS database by the model scripts using a SQL Alchemy connection. The connection details and password were stored in a configuration file.
+
 ## Data Processing
 
 * We filter the Etherium results from our SQL table as we are building a model to predict Etherium values. 
@@ -12,7 +17,7 @@ This file details the steps taken in producing the models, highlighting differen
 
 * We then set our index, the correct format for datatime and convert all dimensions to numerical values. 
 
-# Model Selecting
+## Model Selecting
 
 * For this model, we want to be able to predict the closing value of Etherium and set this our label. Meanwhile all other features become our X values. 
 
@@ -61,11 +66,11 @@ In an attempt to tune our linear regression model, we create a new feature calle
 
 In a separate attempt to tune our results, we provided a new column titled "close(t-14)" this gave a row of data the closing price fourteen days prior. As with our previous two Algorithm Comparisons, Linear Regression was the most effective for our choice in model. When tasking our model this time to predict close prices, this feature enabled our model to return an R2 Score of 0.92173598904218.
 
-# <a id="lstm"></a>LSTM (Long Short Term Memory) model 
+# <a id="lstm"></a>RNN models 
 
 LSTM model is part of RNN (Recurrent Neural Networks) which is extensively used for prediction modelling that involves sequential data. In this project, we are using LSTM model to predict the price of crypto currency (Ethereum).
 
-## Data Processing for LSTM model
+## Data Processing for LSTM (Long Short Term Memory) model
 
 * We select the ethereum_usdt from the dataset, and since we are only interested in 'close' price, on which we are going to make predictions, we select the column 'close' price.
 
@@ -159,4 +164,4 @@ Like LSTM, we use Sequential model from Keras that allows to create a Neural Net
 
 The model is compiled with 'adam' optimizer and loss='mean_squared_error'
 
-Both LSTM and GRU models performed well for ethereum price prediction. For this particular project, it was decided to proceed with LSTM model. 
+Both LSTM and GRU models performed well for ethereum price prediction. 
