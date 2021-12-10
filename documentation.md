@@ -140,6 +140,7 @@ The model results (using the better performing model) were plotted to compare th
 ![train test results](train_test_compare.png)
 
 Using the model, a prediction was also made for prices in the future.
+
 ![predictions](predict.png)
 
 ## GRU model
