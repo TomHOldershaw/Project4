@@ -4,15 +4,20 @@ This file details the steps taken in producing the models, highlighting differen
 
 # <a id="model"></a>Model investigation
 
+## Database
+The project made use of the [previous code produced by the team](https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
+
+The data was obtained from the AWS database by the model scripts using a SQL Alchemy connection. The connection details and password were stored in a configuration file.
+
 ## Data Processing
 
 * We filter the Etherium results from our SQL table as we are building a model to predict Etherium values. 
 
-* Analyise for null values (of which there were none is our dataset). 
+* Analyse for null values (of which there were none is our dataset). 
 
 * We then set our index, the correct format for datatime and convert all dimensions to numerical values. 
 
-# Model Selecting
+## Model Selecting
 
 * For this model, we want to be able to predict the closing value of Etherium and set this our label. Meanwhile all other features become our X values. 
 
@@ -55,17 +60,17 @@ After running our linear regression model, we received a r-score of 0.9194767095
 
 ### 30 Days Ahead Feature
 
-In an attempt to tune our linear regression model, we create a new feature called "Predictions", this contained the closing result thirty days in the future and we tested this being our Y label. However this did not prove to be successful with a model score of -6.209596205147941 when tasking our model with predicting prices thirty days in the future. 
+In an attempt to tune our linear regression model, we create a new feature called "Predictions", this contained the closing result thirty days in the future and we tested this being our Y label. However, this did not prove to be successful with a model score of -6.209596205147941 when tasking our model with predicting prices thirty days in the future. 
 
 ### 14 Days Prior Feature 
 
-In a separate attempt to tune our results, we provided a new column titled "close(t-14)" this gave a row of data the closing price fourteen days prior. As with our previous two Algorithm Comparisons, Linear Regression was the most effective for our choice in model. When tasking our model this time to predict close prices, this feature enabled our model to reutrn an R2 Score of 0.92173598904218.
+In a separate attempt to tune our results, we provided a new column titled "close(t-14)" this gave a row of data the closing price fourteen days prior. As with our previous two Algorithm Comparisons, Linear Regression was the most effective for our choice in model. When tasking our model this time to predict close prices, this feature enabled our model to return an R2 Score of 0.92173598904218.
 
-# <a id="lstm"></a>LSTM (Long Short Term Memory) model 
+# <a id="lstm"></a>RNN models 
 
 LSTM model is part of RNN (Recurrent Neural Networks) which is extensively used for prediction modelling that involves sequential data. In this project, we are using LSTM model to predict the price of crypto currency (Ethereum).
 
-## Data Processing for LSTM model
+## Data Processing for LSTM (Long Short Term Memory) model
 
 * We select the ethereum_usdt from the dataset, and since we are only interested in 'close' price, on which we are going to make predictions, we select the column 'close' price.
 
@@ -100,7 +105,7 @@ y_test.shape = (289,)
 
 We use Sequential model from Keras that allows to create a Neural Network object with sequential layers. Then, we add LSTM layers and given that predicting a price of a coin is a quite complex task we use 50 LSTM units per LSTM layer and we use multiple LSTM layers. Finally, we use the Dense module to add an output layer	
 
- The model was fit was X_train, y_train, for validation X_test and y_test were used, number of epochs = 100 and batch_size of 64. 
+ The model was fit was X_train, y_train, for validation X_test and y_test was used, number of epochs = 100 and batch_size of 64. 
 
 In order to evaluate the model accuracy, we applied mean squared error and square root mean squared error from sklearn.metrics. The results were as follows:
 
@@ -159,4 +164,4 @@ Like LSTM, we use Sequential model from Keras that allows to create a Neural Net
 
 The model is compiled with 'adam' optimizer and loss='mean_squared_error'
 
-Both LSTM and GRU models performed well for ethereum price prediction. For this particular project, it was decided to proceed with LSTM model. 
+Both LSTM and GRU models performed well for ethereum price prediction. 

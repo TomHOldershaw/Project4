@@ -14,11 +14,6 @@ At present, the project produces models only for Ethereum.
 ## Intended use
 The intended use of the project is to produce forecasts of coin prices to inform investment decisions. With time, the intention is to develop a front end to display these predictions. In this use case, the trained model would be used to forecast from the latest price points obtained from the API at the point of prediction.
 
-## Database
-The project made use of the [previous code produced by the team](https://github.com/Abzraja/project-3) to extract information from the Binance API. In a change to the previous code, data was extracted for 4 years and stored in an AWS database.
-
-The data was obtained from the AWS database by the model scripts using a SQL Alchemy connection. The connection details and password were stored in a configuration file.
-
 ## Project steps
 The project steps are illustrated below.
 
@@ -30,9 +25,10 @@ Technical details are provided on key stages in this process:
  - [Long Short Term Memory model](documentation.md#lstm)
 
 Model notebooks are:
- - Model investigation
- - Linear Regression
- - [Long Short Term Memory](ETH_RNN_1.ipynb)
+ - [Cross Validation and Linear Regression Test 1](notebooks/01%20-%20Cross%20Validation.ipynb)
+ - [Cross Validation and Linear Regression Test 2](notebooks/02%20-%20Predicting%20the%20future%20price%20of%20ethereum%20-%20shifting%20the%20target.ipynb)
+ - [Cross Validation and Linear Regression Test 3](notebooks/03%20-%20Predicting%20the%20future%20price%20of%20ethereum%20-%20Adding%20Features%20which%20are%20shifted.ipynb)
+ - [RNN: Long Short Term Memory and GRU](notebooks/ETH_RNN_1.ipynb)
 
 # Conclusions
-We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the WHICH MODEL
+We investigated several model forms, and developed models for two of them. Following this work, we would recommend adopting the GRU model for further development
